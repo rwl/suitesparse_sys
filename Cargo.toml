@@ -1,0 +1,16 @@
+[package]
+name = "amd_sys"
+version = "0.1.0"
+description = "Rust FFI binding for AMD"
+license = "BSD-3-Clause"
+repository = "https://github.com/rwl/amd_sys"
+edition = "2021"
+links = "amd"
+
+[build-dependencies]
+bindgen = "0.68"
+cc = "1"
+regex = "1"
+
+[features]
+dynamic = []
