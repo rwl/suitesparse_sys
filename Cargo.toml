@@ -5,6 +5,14 @@ description = "Rust FFI bindings for SuiteSparse"
 license = "BSD-3-Clause"
 repository = "https://github.com/rwl/suitesparse_sys"
 edition = "2021"
+exclude = [
+    "vendor/**/Doc/",
+    "vendor/**/Tcov/",
+    "vendor/**/Matrix/",
+    "vendor/**/MATLAB/",
+    "vendor/**/Demo/",
+    "vendor/CHOLMOD/SuiteSparse_metis/",
+]
 
 [build-dependencies]
 bindgen = "0.68"
